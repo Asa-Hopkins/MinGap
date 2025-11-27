@@ -19,13 +19,14 @@ Then build with
 `g++ -O3 -march=native MinGap.cpp -o MinGap`
 
 ## Example Usage
-The inputs to the program are:
-`n` - number of spins per problem
-`filename` - the name of the file to store problem instances. The format is a bit dodgy currently, I basically put all the necessary info into a struct and then save the struct.
-`problems` - how many problems to generate
+The inputs to the program are: \
+`n` - number of spins per problem \
+`num_min` - the number of small minima the problem must have \
+`problems` - how many problems to generate and check. Only the instances with small gaps are saved.
 
-So the following would work
-`./MinGap 12 10000`
+So the following would work \
+`./MinGap 6 1 10000` \
+and the resulting file contains 200 instances with small gaps.
 
 Other parameters can be edited in the code directly
 
