@@ -472,7 +472,7 @@ int main(int argc, char* argv[]){
       }
       minima(i) = gap_function(min_loc);
       min_locs(i) = min_loc;
-      std::cout << "(" << minima(0) << "," << min_locs(0) << ")";
+      std::cout << "(" << minima(i) << "," << min_locs(i) << ")";
     }
     std::cout << "\n";
     if (minima.maxCoeff() < gap_threshold) {
