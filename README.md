@@ -10,8 +10,10 @@ This repository contains code for generating Ising problems with multiple small 
 
 ## Getting Started
 Once Eigen and VCL2 are installed, then clone everything with
-`git clone --recurse-submodules https://github.com/Asa-Hopkins/MinGap/
-cd MinGap`
+
+`git clone --recurse-submodules https://github.com/Asa-Hopkins/MinGap/`
+
+`cd MinGap`
 
 Then build with 
 `g++ -O3 -march=native MinGap.cpp -o MinGap`
