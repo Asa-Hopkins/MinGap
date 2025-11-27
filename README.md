@@ -5,6 +5,7 @@ This repository contains code for generating Ising problems with multiple small 
 
 ## Requirements
 - [Eigen 3.4+](https://libeigen.gitlab.io/docs/)
+- [Spectra](https://spectralib.org/)
 - [Vector Class Libary 2](https://github.com/vectorclass/version2)
 - The submodule [ApproxTools](https://github.com/Asa-Hopkins/ApproxTools) has some optional requirements 
 
@@ -15,8 +16,10 @@ Once Eigen and VCL2 are installed, then clone everything with
 
 `cd MinGap`
 
-Then build with 
-`g++ -O3 -march=native MinGap.cpp -o MinGap`
+Then build with \
+`g++ -O3 -march=native MinGap.cpp -o MinGap`\
+You may need to explicitly link Eigen by adding
+`-I/usr/include/eigen3`
 
 ## Example Usage
 The inputs to the program are: \
